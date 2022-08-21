@@ -2,11 +2,11 @@ import java.util.*;
 
 /*
  * @author: Vo Huu Tuan
- * @since: 20/08/2022 10:25 SA
+ * @since: 20/08/2022 10:46 SA
  *
  *
  * */
-public class GiaoCuaHaiDaySo {
+public class HopCuaHaiDaySo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -19,9 +19,9 @@ public class GiaoCuaHaiDaySo {
         for (int i = 0; i < m; i++) {
             B.add(sc.nextInt());
         }
-        ArrayList<Integer> C = new ArrayList<>();
-        for (Integer element : A) {
-            if (B.contains(element)) C.add(element);
+        ArrayList<Integer> C = new ArrayList<>(A);
+        for (Integer element : B) {
+            if (!A.contains(element)) C.add(element);
         }
         C.sort(Comparator.comparingInt(a -> a));
         for (int i = 0; i < C.size() - 1; i++) {
