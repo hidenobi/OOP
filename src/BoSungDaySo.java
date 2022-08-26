@@ -15,16 +15,16 @@ public class BoSungDaySo {
         int MAX = -1;
         for (int i = 0; i < n; i++) {
             int element = sc.nextInt();
-            if(element>MAX) MAX = element;
+            if (element > MAX) MAX = element;
             a.add(element);
         }
         boolean isChecck = false;
-        for(int i=1;i<=MAX;i++){
-            if(!a.contains(i)){
+        for (int i = 1; i <= MAX; i++) {
+            if (!a.contains(i)) {
                 isChecck = true;
                 System.out.println(i);
             }
         }
-        if(!isChecck) System.out.println("Excellent!");
+        if (!isChecck) System.out.println("Excellent!");
     }
 }

@@ -10,11 +10,11 @@ public class TapTuRiengCuaHaiXau {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = Integer.parseInt(sc.nextLine());
-        while(t-->0){
+        while (t-- > 0) {
             String a = sc.nextLine();
             String b = sc.nextLine();
-            a=a.trim();
-            b=b.trim();
+            a = a.trim();
+            b = b.trim();
             String[] listA = a.split("\\s+");
             String[] listB = b.split("\\s+");
             Set<String> x = new HashSet<>();
@@ -25,9 +25,9 @@ public class TapTuRiengCuaHaiXau {
             for (String s : listB) {
                 if (!s.equals("")) y.add(s);
             }
-            for(String element:x){
-                if(!y.contains(element)){
-                    System.out.printf(element+" ");
+            for (String element : x) {
+                if (!y.contains(element)) {
+                    System.out.printf(element + " ");
                 }
             }
             System.out.println();

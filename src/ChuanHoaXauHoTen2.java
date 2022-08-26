@@ -20,7 +20,7 @@ public class ChuanHoaXauHoTen2 {
                 if (i != listStr.length - 1) System.out.print(str + " ");
                 else System.out.print(str);
             }
-            System.out.println(", "+listStr[0].toUpperCase());
+            System.out.println(", " + listStr[0].toUpperCase());
         }
         sc.close();
     }

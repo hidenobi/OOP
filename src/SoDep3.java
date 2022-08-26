@@ -10,7 +10,7 @@ public class SoDep3 {
     public static boolean isCheck(String s) {
         for (int i = 0; i < s.length(); i++) {
             int temp = Character.getNumericValue(s.charAt(i));
-            if(temp!=2&&temp!=3&&temp!=5&&temp!=7) return false;
+            if (temp != 2 && temp != 3 && temp != 5 && temp != 7) return false;
         }
         StringBuilder str = new StringBuilder(s);
         String tmp = str.reverse().toString();

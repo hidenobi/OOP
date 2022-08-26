@@ -10,15 +10,16 @@ import static java.lang.Math.abs;
  * */
 public class SoXaCach {
 
-    public static boolean isRightNumber(String ans){
-        for(int i=0;i<ans.length()-1;i++){
-            if(abs(ans.charAt(i)-ans.charAt(i+1))==1) return false;
+    public static boolean isRightNumber(String ans) {
+        for (int i = 0; i < ans.length() - 1; i++) {
+            if (abs(ans.charAt(i) - ans.charAt(i + 1)) == 1) return false;
         }
         return true;
     }
+
     public static void permute(String s, String answer) {
         if (s.length() == 0) {
-            if(isRightNumber(answer)){
+            if (isRightNumber(answer)) {
                 System.out.println(answer);
             }
             return;
@@ -40,9 +41,9 @@ public class SoXaCach {
             int n = sc.nextInt();
             String str = "";
             for (int i = 1; i <= n; i++) {
-                str+=i;
+                str += i;
             }
-            permute(str,"");
+            permute(str, "");
         }
     }
 }

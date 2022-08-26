@@ -11,11 +11,11 @@ public class Sodep2 {
         int totalDigitNumber = 0;
         for (int i = 0; i < s.length(); i++) {
             int temp = Character.getNumericValue(s.charAt(i));
-            totalDigitNumber+=temp;
+            totalDigitNumber += temp;
         }
         StringBuilder str = new StringBuilder(s);
         String tmp = str.reverse().toString();
-        return (s.charAt(0)=='8' && s.charAt(s.length()-1)=='8'&&totalDigitNumber%10==0&&s.equals(tmp));
+        return (s.charAt(0) == '8' && s.charAt(s.length() - 1) == '8' && totalDigitNumber % 10 == 0 && s.equals(tmp));
     }
 
     public static void main(String[] args) {

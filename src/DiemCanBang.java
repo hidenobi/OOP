@@ -27,7 +27,7 @@ public class DiemCanBang {
                 }
                 tmp += a[i];
             }
-            System.out.println(ans+1);
+            System.out.println(ans + 1);
         }
         sc.close();
     }

@@ -48,6 +48,6 @@ public class LietKeToHop1 {
         int n = sc.nextInt();
         int k = sc.nextInt();
         ans = makeCombi(n, k);
-        System.out.println("Tong cong co "+count+" to hop");
+        System.out.println("Tong cong co " + count + " to hop");
     }
 }
