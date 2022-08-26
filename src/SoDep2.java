@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @gmail: dungtuan095@gmail.com
  * @Github: hidenobi
  * */
-public class Sodep2 {
+public class SoDep2 {
     public static boolean isCheck(String s) {
         int totalDigitNumber = 0;
         for (int i = 0; i < s.length(); i++) {
